@@ -2,10 +2,10 @@ import React from 'react';
 import navLogo from '../assets/NavLogo.png';
 import '../App.css';
 
-export default function NavBar() {
+export default function NavBar({ showNav}) {
 	return (
 		<>
-			<div className='navBar'>
+			<div className={`navBar ${showNav ? 'show' : ''}`}>
 				<img
 					src={navLogo}
 					alt='Brittney Epperson <A phoenix who CODES/>'
@@ -17,7 +17,7 @@ export default function NavBar() {
 					<a>CONTACT</a>
 				</div>
 			</div>
-			<div className='navGradient'></div>
+			<div className={`navGradient ${showNav ? 'show' : ''}`}></div>
 		</>
 	);
 }

@@ -1,19 +1,32 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .home {
   height: 100vh;
-  position: fixed;
+  z-index: 1;
+}
+
+.homeImage {
+  position: absolute;
   top: 371px;
   left: 329px;
 }
 
-.navBar {
+.navBar, .navGradient {
+  z-index: 100;
   position: fixed;
-  top: 0;
   left: 0;
   right: 0;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.navBar {
+  top: 0;
   background-color: #000000;
   color: white;
   padding: 1rem;
@@ -21,6 +34,11 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.navBar.show, .navGradient.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .navLinks {
@@ -32,11 +50,12 @@
 }
 
 .navGradient {
-  position: fixed;
   top: 75px;
-  left: 0;
-  right: 0;
   height: 8px;
   width: 100vw;
   background: linear-gradient(90deg, rgba(0, 165, 174, 1) 0%, rgba(43, 57, 144, 1) 100%);
+}
+
+.mySkills {
+  min-height: 100vh;
 }

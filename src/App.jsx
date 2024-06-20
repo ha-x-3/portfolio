@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
+import MySkills from './components/MySkills';
 import './App.css';
 
 function App() {
@@ -9,7 +10,10 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight) {
+
+      const scrollThreshold = window.innerHeight * 0.05;
+
+      if (window.scrollY > scrollThreshold) {
         setShowNav(true);
       } else {
         setShowNav(false);
@@ -26,10 +30,11 @@ function App() {
 
   return (
     <div className='App'>
-      {showNav && <NavBar />}
+       <NavBar showNav={showNav}/>
       <Home />
+      <MySkills />
     </div>
   )
 }
 
-export default App
+export default App;
