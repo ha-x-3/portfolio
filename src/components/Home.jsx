@@ -1,5 +1,5 @@
 import React from 'react';
-import logoReflection from '../assets/LogoReflection.png';
+import logoReflection from '../assets/LogoReflection.svg';
 import '../App.css';
 
 export default function Home() {

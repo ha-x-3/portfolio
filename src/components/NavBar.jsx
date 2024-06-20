@@ -1,5 +1,5 @@
 import React from 'react';
-import navLogo from '../assets/NavLogo.png';
+import navLogo from '../assets/NavLogo.svg';
 import '../App.css';
 
 export default function NavBar({ showNav}) {
