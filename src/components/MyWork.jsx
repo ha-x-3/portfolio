@@ -6,6 +6,9 @@ import odinRestaurant from '../assets/odinRestaurant.png';
 import quoteGenerator from '../assets/quoteGenerator.png';
 import odinJSLibrary from '../assets/odinJSLibrary.png';
 import adminDashboard from '../assets/odinAdminDash.png';
+import odinCalculator from '../assets/odinCalculator.png';
+import launchChecklist from '../assets/launchChecklist.png';
+import etchASketch from '../assets/etchASketch.png';
 
 const projects = [
 	{
@@ -49,6 +52,27 @@ const projects = [
 		description:
 			"The Odin Project's admin dashboard exercise. Uses HTML, CSS Grid and Flex, and light SVG manipulation.",
 		image: adminDashboard,
+	},
+	{
+		id: 7,
+		title: 'JavaScript Calculator',
+		description:
+			"The Odin Project's calculator exercise. Uses HTML, CSS, and Javascript. Calculator has clear, hard clear, backspace, and negative operator keys.",
+		image: odinCalculator,
+	},
+	{
+		id: 8,
+		title: 'Launch Checklist',
+		description:
+			"LaunchCode's launch checklist exercise. Uses HTML, CSS, Javascript, fetch, forms, and validation.",
+		image: launchChecklist,
+	},
+	{
+		id: 9,
+		title: 'Etch-A-Sketch',
+		description:
+			"The Odin Project's HTML, CSS, and JavaScript exercise making an Etch-A-Sketch. Equipped with color-picker or random color draw settings.",
+		image: etchASketch,
 	},
 ];
 
