@@ -100,6 +100,7 @@
 
 h1 {
   font-size: 36px;
+  font-weight: 800;
 }
 
 .bold {
@@ -126,7 +127,7 @@ li {
 }
 
 .workHeading {
-  margin: 100px 0 25px 0;
+  margin: 100px 0 25px 25px;
 }
 
 .projectGrid {
