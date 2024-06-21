@@ -60,14 +60,25 @@
   min-height: 100vh;
   background-color: #000000;
   color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.parallaxBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url('./assets/Phoenix.svg');
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 1229px 1328px;
   background-position: top 10px left 75px;
 }
 
 .skillsContent {
+  position: relative;
+  z-index: 1;
   width: 65vw;
   display: flex;
   flex-direction: column;
@@ -109,5 +120,5 @@ li {
 }
 
 .myWork {
-  min-height: 50vh;
+  min-height: 100vh;
 }
