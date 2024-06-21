@@ -9,6 +9,9 @@ import adminDashboard from '../assets/odinAdminDash.png';
 import odinCalculator from '../assets/odinCalculator.png';
 import launchChecklist from '../assets/launchChecklist.png';
 import etchASketch from '../assets/etchASketch.png';
+import fccDrumMachine from '../assets/fccDrumMachine.png';
+import rockPaperScissors from '../assets/rockPaperScissors.png';
+import odinProductLanding from '../assets/odinProductLanding.png';
 
 const projects = [
 	{
@@ -82,6 +85,30 @@ const projects = [
 			"The Odin Project's HTML, CSS, and JavaScript exercise making an Etch-A-Sketch. Equipped with color-picker or random color draw settings.",
 		image: etchASketch,
 		link: 'https://ha-x-3.github.io/etch-a-sketch/',
+	},
+	{
+		id: 10,
+		title: 'React Drum Machine',
+		description:
+			"Free Code Camp's React exercise making an Drum Machine. Project is part of the Front End Development Libraries certification.",
+		image: fccDrumMachine,
+		link: 'https://ha-x-3.github.io/fcc-drum-machine-react/',
+	},
+	{
+		id: 11,
+		title: 'Rock, Paper, Scissors Game',
+		description:
+			'HTML, CSS, and JavaScript practice by making a simple Rock, Paper, Scissors game. Has round tracking; first player to score 5 wins.',
+		image: rockPaperScissors,
+		link: 'https://ha-x-3.github.io/rock-paper-scissors/',
+	},
+	{
+		id: 12,
+		title: 'Product Landing Site',
+		description:
+			"HTML and CSS practice by making The Odin Project's product landing activity.",
+		image: odinProductLanding,
+		link: 'https://ha-x-3.github.io/odin-product-landing-page/',
 	},
 ];
 
