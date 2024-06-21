@@ -73,7 +73,7 @@
   background-image: url('./assets/Phoenix.svg');
   background-repeat: no-repeat;
   background-size: 1229px 1328px;
-  background-position: top 10px left 75px;
+  background-position: left 75px top 10px;
 }
 
 .skillsContent {
@@ -121,4 +121,94 @@ li {
 
 .myWork {
   min-height: 100vh;
+  width: 65vw;
+  margin: auto;
+}
+
+.workHeading {
+  margin: 100px 0 25px 0;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.projectCard {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projectCard img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.projectInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.projectInfo h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.projectInfo p {
+  text-align: center;
+}
+
+.projectCard:hover .projectInfo {
+  opacity: 1;
+}
+
+.projectCard:hover img {
+  transform: scale(1.05);
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .projectGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .projectCard:hover .projectInfo {
+    opacity: 0;
+  }
+
+  .projectCard:hover img {
+    transform: none;
+  }
+
+  .projectInfo {
+    top: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .projectCard.active .projectInfo {
+    transform: translateY(0);
+  }
 }

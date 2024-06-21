@@ -10,30 +10,26 @@ function App() {
   const [showNav, setShowNav] = useState(false);
   const [startParallax, setStartParallax] = useState(false);
   const mySkillsRef = useRef(null);
-  const myWorkRef = useRef(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-		const scrollThreshold = window.innerHeight * 0.05;
-		setShowNav(window.scrollY > scrollThreshold);
+		const handleScroll = () => {
+			const scrollThreshold = window.innerHeight * 0.05;
+			setShowNav(window.scrollY > scrollThreshold);
 
-		if (myWorkRef.current && mySkillsRef.current) {
-			const myWorkRect = myWorkRef.current.getBoundingClientRect();
-			const mySkillsRect = mySkillsRef.current.getBoundingClientRect();
-			const triggerPoint = window.innerHeight * 0.95; // 5% of viewport height from bottom
+			if (mySkillsRef.current) {
+				const mySkillsRect =
+					mySkillsRef.current.getBoundingClientRect();
+				const triggerPoint = window.innerHeight * 0.6; // 60% of viewport height
 
-			setStartParallax(
-				myWorkRect.top < triggerPoint && mySkillsRect.bottom > 0
-			);
-		}
-	};
+				setStartParallax(mySkillsRect.top < triggerPoint);
+			}
+		};
 
-    window.addEventListener('scroll', handleScroll);
+		window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
   }, []);
 
   return (
@@ -44,7 +40,7 @@ function App() {
 				ref={mySkillsRef}
 				startParallax={startParallax}
 			/>
-			<MyWork ref={myWorkRef} />
+			<MyWork />
 		</div>
   );
 }
