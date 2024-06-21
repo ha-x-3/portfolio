@@ -1,18 +1,30 @@
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
+import weatherApp from '../assets/weatherApp.png';
+import odinToDoList from '../assets/odinToDoList.png'
+import odinRestaurant from '../assets/odinRestaurant.png'
 
 const projects = [
 	{
 		id: 1,
-		title: 'Project 1',
-		description: 'Short description of Project 1',
-		image: '../assets/NavLogo.svg',
+		title: 'Weather App',
+		description:
+			"The Odin Project's JavaScript/API Weather App exercise. Uses JavaScript, DOM manipulation, fetch from Weather API, and JSON data manipulation.",
+		image: weatherApp,
 	},
 	{
 		id: 2,
-		title: 'Project 2',
-		description: 'Short description of Project 2',
-		image: '../assets/NavLogo.svg',
+		title: 'To-Do List',
+		description:
+			"The Odin Project's Webpack/JavaScript To-Do List exercise. Uses JavaScript modules, OOP Principles, DOM manipulation, and webpack.",
+		image: odinToDoList,
+	},
+	{
+		id: 3,
+		title: 'Restaurant Page',
+		description:
+			"The Odin Project's Webpack/JavaScript Restaurant Page exercise. Uses JavaScript modules while also learning how to configure webpack.",
+		image: odinRestaurant,
 	},
 ];
 
