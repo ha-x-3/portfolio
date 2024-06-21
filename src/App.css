@@ -142,13 +142,31 @@ li {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 6px; /* Adjust padding to make space for the border */
+  background-color: #000;
+}
+
+.projectCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  margin: -4px; /* Adjust this value based on the border width you want */
+  border-radius: 8px; /* Same as .projectCard to align the gradient border */
+  background: linear-gradient(#00A5AE, #2B3990);
 }
 
 .projectCard img {
   width: 100%;
   height: auto;
   display: block;
+  position: relative;
+  z-index: 2; /* Ensure image is above the pseudo-element */
   transition: transform 0.3s ease;
+  border-radius: 8px;
 }
 
 .projectInfo {
@@ -166,6 +184,7 @@ li {
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  z-index: 2; /* Ensure info is above the pseudo-element */
 }
 
 .projectInfo h3 {
