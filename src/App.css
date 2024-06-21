@@ -107,3 +107,7 @@ li {
 .hardSkills, .softSkills {
   width: 50%;
 }
+
+.myWork {
+  min-height: 50vh;
+}
