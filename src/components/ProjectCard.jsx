@@ -5,6 +5,7 @@ const ProjectCard = ({
 	title,
 	description,
 	image,
+    link,
 	setActiveProject,
 	activeProject,
 }) => {
@@ -46,14 +47,17 @@ const ProjectCard = ({
 			ref={ref}
 			className={`projectCard ${activeProject === id ? 'active' : ''}`}
 		>
-			<img
+            <a href={link}>
+              <img
 				src={image}
 				alt={title}
-			/>
-			<div className='projectInfo'>
-				<h3>{title}</h3>
-				<p>{description}</p>
-			</div>
+                />
+                <div className='projectInfo'>
+                    <h3>{title}</h3>
+                    <p>{description}</p>
+                </div>  
+            </a>
+			
 		</div>
 	);
 };
