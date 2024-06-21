@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import weatherApp from '../assets/weatherApp.png';
-import odinToDoList from '../assets/odinToDoList.png'
-import odinRestaurant from '../assets/odinRestaurant.png'
+import odinToDoList from '../assets/odinToDoList.png';
+import odinRestaurant from '../assets/odinRestaurant.png';
+import quoteGenerator from '../assets/quoteGenerator.png';
+import odinJSLibrary from '../assets/odinJSLibrary.png';
+import adminDashboard from '../assets/odinAdminDash.png';
 
 const projects = [
 	{
@@ -25,6 +28,27 @@ const projects = [
 		description:
 			"The Odin Project's Webpack/JavaScript Restaurant Page exercise. Uses JavaScript modules while also learning how to configure webpack.",
 		image: odinRestaurant,
+	},
+	{
+		id: 4,
+		title: 'React Quote Generator',
+		description:
+			"Free Code Camp's React quote generator exercise. Uses Front End Libraries, fetching JSON, and JavaScript.",
+		image: quoteGenerator,
+	},
+	{
+		id: 5,
+		title: 'Library Tracker',
+		description:
+			"The Odin Project's library tracker exercise. Uses HTML, CSS, and JavaScript.",
+		image: odinJSLibrary,
+	},
+	{
+		id: 6,
+		title: 'Admin Dashboard',
+		description:
+			"The Odin Project's admin dashboard exercise. Uses HTML, CSS Grid and Flex, and light SVG manipulation.",
+		image: adminDashboard,
 	},
 ];
 
