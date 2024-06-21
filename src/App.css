@@ -161,7 +161,7 @@ li {
 
 .projectCard img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   position: relative;
   z-index: 2; /* Ensure image is above the pseudo-element */
