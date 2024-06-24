@@ -30,19 +30,19 @@ const projects = [
 	},
 	{
 		id: 2,
-		title: 'React Calculator',
-		description:
-			"Free Code Camp's React calculator exercise. Uses React, JavaScript, and Front End Libraries. Calculator displays and uses formula/expression logic.",
-		image: reactCalculator,
-		link: 'https://ha-x-3.github.io/fcc-react-calculator/',
-	},
-	{
-		id: 3,
 		title: 'To-Do List',
 		description:
 			"The Odin Project's Webpack/JavaScript To-Do List exercise. Uses JavaScript modules, OOP Principles, DOM manipulation, and webpack.",
 		image: odinToDoList,
 		link: 'https://ha-x-3.github.io/odin-todo-list/',
+	},
+	{
+		id: 3,
+		title: 'React Calculator',
+		description:
+			"Free Code Camp's React calculator exercise. Uses React, JavaScript, and Front End Libraries. Calculator displays and uses formula/expression logic.",
+		image: reactCalculator,
+		link: 'https://ha-x-3.github.io/fcc-react-calculator/',
 	},
 	{
 		id: 4,
@@ -70,14 +70,6 @@ const projects = [
 	},
 	{
 		id: 7,
-		title: 'Admin Dashboard',
-		description:
-			"The Odin Project's admin dashboard exercise. Uses HTML, CSS Grid and Flex, and light SVG manipulation.",
-		image: adminDashboard,
-		link: 'https://ha-x-3.github.io/odin-admin-dashboard/',
-	},
-	{
-		id: 8,
 		title: 'JavaScript Calculator',
 		description:
 			"The Odin Project's calculator exercise. Uses HTML, CSS, and Javascript. Calculator has clear, hard clear, backspace, and negative operator keys. Uses immediate execution logic.",
@@ -85,12 +77,20 @@ const projects = [
 		link: 'https://ha-x-3.github.io/odin-calculator/',
 	},
 	{
-		id: 9,
+		id: 8,
 		title: 'Launch Checklist',
 		description:
 			"LaunchCode's launch checklist exercise. Uses HTML, CSS, Javascript, fetch, forms, and validation.",
 		image: launchChecklist,
 		link: 'https://ha-x-3.github.io/launch-checklist/',
+	},
+	{
+		id: 9,
+		title: 'Admin Dashboard',
+		description:
+			"The Odin Project's admin dashboard exercise. Uses HTML, CSS Grid and Flex, and light SVG manipulation.",
+		image: adminDashboard,
+		link: 'https://ha-x-3.github.io/odin-admin-dashboard/',
 	},
 	{
 		id: 10,
