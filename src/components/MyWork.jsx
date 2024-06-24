@@ -188,6 +188,14 @@ const MyWork = () => {
 					/>
 				))}
 			</div>
+			<div className='repoLink'>
+				<a href='https://github.com/ha-x-3?tab=repositories'>
+					<div className='buttonBorder'>
+						<div className='button'>SEE FULL LIBRARY</div>
+					</div>
+				</a>
+			</div>
+			
 		</div>
 	);
 };

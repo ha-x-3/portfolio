@@ -209,6 +209,45 @@ li {
   transform: scale(1.05);
 }
 
+.buttonBorder {
+  background: linear-gradient(90deg, #00A5AE, #2B3990);
+  width: 349px;
+  height: 54px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto 75px auto;
+}
+
+.button {
+  text-align: center;
+  padding-top: 2px;
+  height: 85%;
+  width: 97%;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  font-weight: 800;
+  font-size: 28px;
+  border: none;
+}
+
+.button:hover {
+  background: transparent;
+  color: white;
+}
+
+.repoLink {
+  width: 349px;
+  height: 54px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* Mobile styles */
 @media (max-width: 767px) {
   .projectGrid {
