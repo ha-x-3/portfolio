@@ -123,7 +123,7 @@ li {
 .myWork {
   min-height: 100vh;
   width: 65vw;
-  margin: auto;
+  margin: 0 auto 75px auto;
 }
 
 .workHeading {
@@ -217,7 +217,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30px auto 75px auto;
+  margin: 30px auto;
 }
 
 .button {
@@ -246,6 +246,16 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.contact {
+  background-color: black;
+  color: white;
+}
+
+.contactHeading {
+  width: 65%;
+  margin: 80px auto;
 }
 
 /* Mobile styles */

@@ -3,6 +3,7 @@ import NavBar from './components/NavBar';
 import Home from './components/Home';
 import MySkills from './components/MySkills';
 import MyWork from './components/MyWork';
+import Contact from './components/Contact';
 import './App.css';
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
 				startParallax={startParallax}
 			/>
 			<MyWork />
+			<Contact />
 		</div>
   );
 }
