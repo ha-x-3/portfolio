@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import weatherApp from '../assets/weatherApp.png';
+import reactCalculator from '../assets/reactCalculator.png';
 import odinToDoList from '../assets/odinToDoList.png';
 import odinRestaurant from '../assets/odinRestaurant.png';
 import quoteGenerator from '../assets/quoteGenerator.png';
@@ -15,6 +16,8 @@ import odinProductLanding from '../assets/odinProductLanding.png';
 import familyBbqSurvey from '../assets/familyBbqSurvey.png';
 import relax from '../assets/relax.png';
 import technicalSOP from '../assets/technicalSOP.png';
+import htmlMeSomething from '../assets/htmlMeSomething.png';
+import tribute from '../assets/tribute.png';
 
 const projects = [
 	{
@@ -27,6 +30,14 @@ const projects = [
 	},
 	{
 		id: 2,
+		title: 'React Calculator',
+		description:
+			"Free Code Camp's React calculator exercise. Uses React, JavaScript, and Front End Libraries. Calculator displays and uses formula/expression logic.",
+		image: reactCalculator,
+		link: 'https://ha-x-3.github.io/fcc-react-calculator/',
+	},
+	{
+		id: 3,
 		title: 'To-Do List',
 		description:
 			"The Odin Project's Webpack/JavaScript To-Do List exercise. Uses JavaScript modules, OOP Principles, DOM manipulation, and webpack.",
@@ -34,7 +45,7 @@ const projects = [
 		link: 'https://ha-x-3.github.io/odin-todo-list/',
 	},
 	{
-		id: 3,
+		id: 4,
 		title: 'Restaurant Page',
 		description:
 			"The Odin Project's Webpack/JavaScript Restaurant Page exercise. Uses JavaScript modules while also learning how to configure webpack.",
@@ -42,7 +53,7 @@ const projects = [
 		link: 'https://ha-x-3.github.io/odin-restaurant-page/',
 	},
 	{
-		id: 4,
+		id: 5,
 		title: 'React Quote Generator',
 		description:
 			"Free Code Camp's React quote generator exercise. Uses Front End Libraries, fetching JSON, and JavaScript.",
@@ -50,7 +61,7 @@ const projects = [
 		link: 'https://ha-x-3.github.io/quote-generator/',
 	},
 	{
-		id: 5,
+		id: 6,
 		title: 'Library Tracker',
 		description:
 			"The Odin Project's library tracker exercise. Uses HTML, CSS, and JavaScript.",
@@ -58,7 +69,7 @@ const projects = [
 		link: 'https://ha-x-3.github.io/odin-js-object-library/',
 	},
 	{
-		id: 6,
+		id: 7,
 		title: 'Admin Dashboard',
 		description:
 			"The Odin Project's admin dashboard exercise. Uses HTML, CSS Grid and Flex, and light SVG manipulation.",
@@ -66,15 +77,15 @@ const projects = [
 		link: 'https://ha-x-3.github.io/odin-admin-dashboard/',
 	},
 	{
-		id: 7,
+		id: 8,
 		title: 'JavaScript Calculator',
 		description:
-			"The Odin Project's calculator exercise. Uses HTML, CSS, and Javascript. Calculator has clear, hard clear, backspace, and negative operator keys.",
+			"The Odin Project's calculator exercise. Uses HTML, CSS, and Javascript. Calculator has clear, hard clear, backspace, and negative operator keys. Uses immediate execution logic.",
 		image: odinCalculator,
 		link: 'https://ha-x-3.github.io/odin-calculator/',
 	},
 	{
-		id: 8,
+		id: 9,
 		title: 'Launch Checklist',
 		description:
 			"LaunchCode's launch checklist exercise. Uses HTML, CSS, Javascript, fetch, forms, and validation.",
@@ -82,7 +93,7 @@ const projects = [
 		link: 'https://ha-x-3.github.io/launch-checklist/',
 	},
 	{
-		id: 9,
+		id: 10,
 		title: 'Etch-A-Sketch',
 		description:
 			"The Odin Project's HTML, CSS, and JavaScript exercise making an Etch-A-Sketch. Equipped with color-picker or random color draw settings.",
@@ -90,7 +101,7 @@ const projects = [
 		link: 'https://ha-x-3.github.io/etch-a-sketch/',
 	},
 	{
-		id: 10,
+		id: 11,
 		title: 'React Drum Machine',
 		description:
 			"Free Code Camp's React exercise making an Drum Machine. Project is part of the Front End Development Libraries certification.",
@@ -98,7 +109,7 @@ const projects = [
 		link: 'https://ha-x-3.github.io/fcc-drum-machine-react/',
 	},
 	{
-		id: 11,
+		id: 12,
 		title: 'Rock, Paper, Scissors Game',
 		description:
 			'HTML, CSS, and JavaScript practice by making a simple Rock, Paper, Scissors game. Has round tracking; first player to score 5 wins.',
@@ -106,7 +117,7 @@ const projects = [
 		link: 'https://ha-x-3.github.io/rock-paper-scissors/',
 	},
 	{
-		id: 12,
+		id: 13,
 		title: 'Product Landing Site',
 		description:
 			"HTML and CSS practice by making The Odin Project's product landing activity.",
@@ -114,7 +125,7 @@ const projects = [
 		link: 'https://ha-x-3.github.io/odin-product-landing-page/',
 	},
 	{
-		id: 13,
+		id: 14,
 		title: "Stephen's Family BBQ Survey",
 		description:
 			'HTML, CSS, and forms/input elements practice. Survey is for evaluating a family barbeque.',
@@ -122,7 +133,7 @@ const projects = [
 		link: 'https://ha-x-3.github.io/bbq-survey-form/',
 	},
 	{
-		id: 14,
+		id: 15,
 		title: 'Heinz Relax Product Landing Page',
 		description:
 			'HTML and CSS practice making a parody product landing page.',
@@ -130,11 +141,27 @@ const projects = [
 		link: 'https://ha-x-3.github.io/relax-product-landing-page/',
 	},
 	{
-		id: 15,
+		id: 16,
 		title: 'Tesing For Your Blood Type',
 		description:
 			'HTML and CSS practice making a technical SOP for manual blood type testing.',
 		image: technicalSOP,
+		link: 'https://ha-x-3.github.io/technical-documentation-sop/',
+	},
+	{
+		id: 17,
+		title: "LaunchCode's HTML Me Something",
+		description:
+			'HTML and CSS practice making a website detailing my home buying journey.',
+		image: htmlMeSomething,
+		link: 'https://ha-x-3.github.io/html-me-something/',
+	},
+	{
+		id: 18,
+		title: 'Tribute Site for John Williams',
+		description:
+			'HTML and CSS practice making a website in ode to John Williams.',
+		image: tribute,
 		link: 'https://ha-x-3.github.io/technical-documentation-sop/',
 	},
 ];
