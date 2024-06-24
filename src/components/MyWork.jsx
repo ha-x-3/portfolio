@@ -12,6 +12,9 @@ import etchASketch from '../assets/etchASketch.png';
 import fccDrumMachine from '../assets/fccDrumMachine.png';
 import rockPaperScissors from '../assets/rockPaperScissors.png';
 import odinProductLanding from '../assets/odinProductLanding.png';
+import familyBbqSurvey from '../assets/familyBbqSurvey.png';
+import relax from '../assets/relax.png';
+import technicalSOP from '../assets/technicalSOP.png';
 
 const projects = [
 	{
@@ -109,6 +112,30 @@ const projects = [
 			"HTML and CSS practice by making The Odin Project's product landing activity.",
 		image: odinProductLanding,
 		link: 'https://ha-x-3.github.io/odin-product-landing-page/',
+	},
+	{
+		id: 13,
+		title: "Stephen's Family BBQ Survey",
+		description:
+			'HTML, CSS, and forms/input elements practice. Survey is for evaluating a family barbeque.',
+		image: familyBbqSurvey,
+		link: 'https://ha-x-3.github.io/bbq-survey-form/',
+	},
+	{
+		id: 14,
+		title: 'Heinz Relax Product Landing Page',
+		description:
+			'HTML and CSS practice making a parody product landing page.',
+		image: relax,
+		link: 'https://ha-x-3.github.io/relax-product-landing-page/',
+	},
+	{
+		id: 15,
+		title: 'Tesing For Your Blood Type',
+		description:
+			'HTML and CSS practice making a technical SOP for manual blood type testing.',
+		image: technicalSOP,
+		link: 'https://ha-x-3.github.io/technical-documentation-sop/',
 	},
 ];
 
