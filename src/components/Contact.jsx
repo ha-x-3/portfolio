@@ -13,7 +13,7 @@ const Contact = React.forwardRef(({ startParallax }, ref) => {
 		const handleParallax = () => {
 			if (startParallax && backgroundRef.current) {
 				const scrolled = window.scrollY;
-				const currentY = 1000 - scrolled * 0.5; // Start at 165 and move up
+				const currentY = 1000 - scrolled * 0.55; // Start at 165 and move up
 				backgroundRef.current.style.backgroundPosition = `left 500px top ${currentY}px`;
 			}
 		};
