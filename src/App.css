@@ -254,8 +254,29 @@ a {
 }
 
 .contactHeading {
-  width: 65%;
+  width: 65vw;
   margin: 80px auto;
+}
+
+.contactLinks {
+  width: 65vw;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0 50px;
+}
+
+.contactDetail {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 /* Mobile styles */
