@@ -9,7 +9,8 @@ import './App.css';
 function App() {
 
   const [showNav, setShowNav] = useState(false);
-  const [startParallax, setStartParallax] = useState(false);
+   const [startParallaxSkills, setStartParallaxSkills] = useState(false);
+   const [startParallaxContact, setStartParallaxContact] = useState(false);
   const mySkillsRef = useRef(null);
   const contactRef = useRef(null);
 
@@ -23,7 +24,7 @@ function App() {
 					mySkillsRef.current.getBoundingClientRect();
 				const triggerPoint = window.innerHeight * 0.6; // 60% of viewport height
 
-				setStartParallax(mySkillsRect.top < triggerPoint);
+				setStartParallaxSkills(mySkillsRect.top < triggerPoint);
 			}
 
 			if (contactRef.current) {
@@ -31,7 +32,7 @@ function App() {
 					contactRef.current.getBoundingClientRect();
 				const triggerPoint = window.innerHeight * 0.99; // 99% of viewport height
 
-				setStartParallax(contactRect.top < triggerPoint);
+				setStartParallaxContact(contactRect.top < triggerPoint);
 			}
 		};
 
@@ -48,12 +49,12 @@ function App() {
 			<Home />
 			<MySkills
 				ref={mySkillsRef}
-				startParallax={startParallax}
+				startParallax={startParallaxSkills}
 			/>
 			<MyWork />
 			<Contact
 				ref={contactRef}
-				startParallax={startParallax}
+				startParallax={startParallaxContact}
 			/>
 		</div>
   );
