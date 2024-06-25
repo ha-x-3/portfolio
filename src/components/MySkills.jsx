@@ -13,7 +13,7 @@ const MySkills = React.forwardRef(({ startParallax }, ref) => {
 		const handleParallax = () => {
 			if (startParallax && backgroundRef.current) {
 				const scrolled = window.scrollY;
-				const currentY = 165 - scrolled * 0.5; // Start at 165 and move up
+				const currentY = 165 - scrolled * 0.6; // Start at 165 and move up
 				backgroundRef.current.style.backgroundPosition = `left 75px top ${currentY}px`;
 			}
 		};
