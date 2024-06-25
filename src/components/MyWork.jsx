@@ -170,7 +170,7 @@ const MyWork = () => {
 	const [activeProject, setActiveProject] = useState(null);
 
 	return (
-		<div className='myWork'>
+		<div className='myWork' id='work'>
 			<div className='workHeading'>
 				<h1>MY PORTFOLIO</h1>
 				<p>

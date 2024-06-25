@@ -45,6 +45,7 @@ const Contact = React.forwardRef(({ startParallax }, ref) => {
 	return (
 		<div
 			className='contact'
+            id='contact'
 			ref={ref}
 		>
 			<div

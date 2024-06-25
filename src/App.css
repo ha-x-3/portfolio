@@ -246,6 +246,12 @@ li {
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .contact {

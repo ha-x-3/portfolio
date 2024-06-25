@@ -11,10 +11,10 @@ export default function NavBar({ showNav}) {
 					alt='Brittney Epperson <A phoenix who CODES/>'
 				/>
 				<div className='navLinks'>
-					<a>HOME</a>
-					<a>MY SKILLS</a>
-					<a>MY WORK</a>
-					<a>CONTACT</a>
+					<a href='#home'>HOME</a>
+					<a href='#skills'>MY SKILLS</a>
+					<a href='#work'>MY WORK</a>
+					<a href='#contact'>CONTACT</a>
 				</div>
 			</div>
 			<div className={`navGradient ${showNav ? 'show' : ''}`}></div>

@@ -25,6 +25,7 @@ const MySkills = React.forwardRef(({ startParallax }, ref) => {
 	return (
 		<div
 			className='mySkills'
+			id='skills'
 			ref={ref}
 		>
 			<div
