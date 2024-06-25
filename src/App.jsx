@@ -7,14 +7,13 @@ import Contact from './components/Contact';
 import './App.css';
 
 function App() {
+	const [showNav, setShowNav] = useState(false);
+	const [startParallaxSkills, setStartParallaxSkills] = useState(false);
+	const [startParallaxContact, setStartParallaxContact] = useState(false);
+	const mySkillsRef = useRef(null);
+	const contactRef = useRef(null);
 
-  const [showNav, setShowNav] = useState(false);
-   const [startParallaxSkills, setStartParallaxSkills] = useState(false);
-   const [startParallaxContact, setStartParallaxContact] = useState(false);
-  const mySkillsRef = useRef(null);
-  const contactRef = useRef(null);
-
-  useEffect(() => {
+	useEffect(() => {
 		const handleScroll = () => {
 			const scrollThreshold = window.innerHeight * 0.05;
 			setShowNav(window.scrollY > scrollThreshold);
@@ -28,8 +27,7 @@ function App() {
 			}
 
 			if (contactRef.current) {
-				const contactRect =
-					contactRef.current.getBoundingClientRect();
+				const contactRect = contactRef.current.getBoundingClientRect();
 				const triggerPoint = window.innerHeight * 0.99; // 99% of viewport height
 
 				setStartParallaxContact(contactRect.top < triggerPoint);
@@ -41,9 +39,9 @@ function App() {
 		return () => {
 			window.removeEventListener('scroll', handleScroll);
 		};
-  }, []);
+	}, []);
 
-  return (
+	return (
 		<div className='App'>
 			<NavBar showNav={showNav} />
 			<Home />
@@ -57,7 +55,7 @@ function App() {
 				startParallax={startParallaxContact}
 			/>
 		</div>
-  );
+	);
 }
 
 export default App;

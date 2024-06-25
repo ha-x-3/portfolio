@@ -1,6 +1,7 @@
 .App {
   display: flex;
   flex-direction: column;
+  width: 100vw;
 }
 
 .home {
@@ -11,7 +12,13 @@
 .homeImage {
   position: absolute;
   top: 371px;
-  left: 329px;
+  left: 25%;
+  width: 80%;
+}
+
+#phoenixImage {
+  width: 781.96px;
+  height: 358.05px;
 }
 
 .navBar, .navGradient {
@@ -46,7 +53,7 @@ a {
 }
 
 .navLinks {
-  width: 301px;
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -342,6 +349,26 @@ li {
 
 /* Mobile styles */
 @media (max-width: 767px) {
+  #phoenixImage {
+    width: 100vw;
+    height: auto;
+  }
+
+  .homeImage {
+    top: 40%;
+    left: 0;
+    width: 50%;
+  }
+
+  .navLinks {
+    width: 50%;
+    font-size: 12px;
+  }
+
+  #navLogoImage {
+    width: 40%;
+  }
+
   .projectGrid {
     grid-template-columns: 1fr;
     gap: 40px;

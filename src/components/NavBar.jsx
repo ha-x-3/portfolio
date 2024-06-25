@@ -9,6 +9,7 @@ export default function NavBar({ showNav}) {
 				<img
 					src={navLogo}
 					alt='Brittney Epperson <A phoenix who CODES/>'
+					id='navLogoImage'
 				/>
 				<div className='navLinks'>
 					<a
