@@ -251,11 +251,31 @@ a {
 .contact {
   background-color: black;
   color: white;
+  position: relative;
+  overflow: hidden;
+  min-height: 85.45vh;
+}
+
+.parallaxBackgroundContact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./assets/Phoenix.svg');
+  background-repeat: no-repeat;
+  background-size: 1229px 1328px;
+  background-position: left 75px top 10px;
+  z-index: 0;
 }
 
 .contactContent {
+  position: relative;
+  z-index: 1;
   width: 65vw;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .contactHeading {
@@ -292,6 +312,19 @@ a {
 
 .footerLogo {
   padding: 10px 9px 0 0;
+}
+
+.footerGradient {
+  padding-bottom: -4px;
+  height: 8px;
+  width: 100vw;
+  background: linear-gradient(-90deg, rgba(0, 165, 174, 1) 0%, rgba(43, 57, 144, 1) 100%);
+  transform: translateX(-100%);
+  transition: transform 1s ease;
+}
+
+.footerGradient.show {
+  transform: translateX(0);
 }
 
 /* Mobile styles */

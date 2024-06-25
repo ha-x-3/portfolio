@@ -11,6 +11,7 @@ function App() {
   const [showNav, setShowNav] = useState(false);
   const [startParallax, setStartParallax] = useState(false);
   const mySkillsRef = useRef(null);
+  const contactRef = useRef(null);
 
   useEffect(() => {
 		const handleScroll = () => {
@@ -23,6 +24,14 @@ function App() {
 				const triggerPoint = window.innerHeight * 0.6; // 60% of viewport height
 
 				setStartParallax(mySkillsRect.top < triggerPoint);
+			}
+
+			if (contactRef.current) {
+				const contactRect =
+					contactRef.current.getBoundingClientRect();
+				const triggerPoint = window.innerHeight * 0.99; // 99% of viewport height
+
+				setStartParallax(contactRect.top < triggerPoint);
 			}
 		};
 
@@ -42,7 +51,10 @@ function App() {
 				startParallax={startParallax}
 			/>
 			<MyWork />
-			<Contact />
+			<Contact
+				ref={contactRef}
+				startParallax={startParallax}
+			/>
 		</div>
   );
 }
