@@ -40,7 +40,7 @@ const projects = [
 		id: 3,
 		title: 'React Calculator',
 		description:
-			"Free Code Camp's React calculator exercise. Uses React, JavaScript, and Front End Libraries. Calculator displays and uses formula/expression logic.",
+			"Free Code Camp's React calculator exercise. Uses React, JavaScript, and Front End Libraries. Calculator displays formula and utilizes formula/expression logic.",
 		image: reactCalculator,
 		link: 'https://ha-x-3.github.io/fcc-react-calculator/',
 	},
