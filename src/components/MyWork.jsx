@@ -72,7 +72,7 @@ const projects = [
 		id: 7,
 		title: 'JavaScript Calculator',
 		description:
-			"The Odin Project's calculator exercise. Uses HTML, CSS, and Javascript. Calculator has clear, hard clear, backspace, and negative operator keys. Uses immediate execution logic.",
+			"The Odin Project's JavaScript calculator exercise. Features clear, hard clear, backspace, and negative operator keys utilizing immediate execution logic.",
 		image: odinCalculator,
 		link: 'https://ha-x-3.github.io/odin-calculator/',
 	},
