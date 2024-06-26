@@ -170,32 +170,36 @@ const MyWork = () => {
 	const [activeProject, setActiveProject] = useState(null);
 
 	return (
-		<div className='myWork' id='work'>
-			<div className='workHeading'>
-				<h1>MY PORTFOLIO</h1>
-				<p>
-					&lt; A GLANCE AT MY{' '}
-					<span className='bold'>CAPABILITIES</span> &#8725;&gt;
-				</p>
+		<div
+			className='myWork'
+			id='work'
+		>
+			<div className='workContent'>
+				<div className='workHeading'>
+					<h1>MY PORTFOLIO</h1>
+					<p>
+						&lt; A GLANCE AT MY{' '}
+						<span className='bold'>CAPABILITIES</span> &#8725;&gt;
+					</p>
+				</div>
+				<div className='projectGrid'>
+					{projects.map((project) => (
+						<ProjectCard
+							key={project.id}
+							{...project}
+							setActiveProject={setActiveProject}
+							activeProject={activeProject}
+						/>
+					))}
+				</div>
+				<div className='repoLink'>
+					<a href='https://github.com/ha-x-3?tab=repositories'>
+						<div className='buttonBorder'>
+							<div className='button'>SEE FULL LIBRARY</div>
+						</div>
+					</a>
+				</div>
 			</div>
-			<div className='projectGrid'>
-				{projects.map((project) => (
-					<ProjectCard
-						key={project.id}
-						{...project}
-						setActiveProject={setActiveProject}
-						activeProject={activeProject}
-					/>
-				))}
-			</div>
-			<div className='repoLink'>
-				<a href='https://github.com/ha-x-3?tab=repositories'>
-					<div className='buttonBorder'>
-						<div className='button'>SEE FULL LIBRARY</div>
-					</div>
-				</a>
-			</div>
-			
 		</div>
 	);
 };
