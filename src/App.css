@@ -440,10 +440,15 @@ li {
   }
 
   .workContent {
-    width: 80vw;
+    width: 85vw;
+  }
+
+  .workHeading {
+    align-self: center;
   }
 
   .projectGrid {
+    max-width: 75vw;
     grid-template-columns: 1fr;
     gap: 40px;
   }
