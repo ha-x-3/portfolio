@@ -13,7 +13,8 @@ const ProjectCard = ({
 
 	useEffect(() => {
 		const options = {
-			threshold: 0.5,
+			threshold: 0.6,
+			rootMargin: '-30% 0px -30% 0px',
 		};
 
 		const observer = new IntersectionObserver((entries) => {
