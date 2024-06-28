@@ -459,6 +459,11 @@ li {
     align-self: center;
   }
 
+  .projectCard {
+    width: 100%;
+    height: auto;
+  }
+
   .projectGrid {
     max-width: 75vw;
     grid-template-columns: 1fr;
