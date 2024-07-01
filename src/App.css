@@ -456,11 +456,13 @@ li {
 
   .workContent {
     width: 85vw;
+    margin-top: 0;
     padding-top: 75px;
   }
 
   .workHeading {
     align-self: center;
+    margin-top: 0;
   }
 
   .projectCard {
