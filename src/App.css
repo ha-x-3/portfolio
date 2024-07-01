@@ -102,7 +102,7 @@ a {
 
 /* Skills section */
 .mySkills {
-  min-height: 100vh;
+  min-height: 776px;
   background-color: #000000;
   color: white;
   display: flex;
@@ -143,7 +143,7 @@ a {
 
 .skills {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -418,7 +418,7 @@ li {
 
   .mySkills {
     width: 100vw;
-    min-height: 230vh;
+    min-height: 950px;
     padding-top: 75px;
   }
 
@@ -547,7 +547,7 @@ li {
 
 @media (max-width: 390px) {
     .mySkills {
-      min-height: 170vh;
+      min-height: 1440px;
     }
 
     .skills {
