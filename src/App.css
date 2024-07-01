@@ -387,7 +387,7 @@ li {
 }
 
 /* Media queries for responsive design */
-@media (max-width: 992px) {
+@media (max-width: 844px) {
   .home {
     height: 100vh;
     overflow-x: hidden;
