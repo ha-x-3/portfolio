@@ -112,7 +112,7 @@ const projects = [
 		id: 12,
 		title: 'Rock, Paper, Scissors Game',
 		description:
-			'HTML, CSS, and JavaScript practice by making a simple Rock, Paper, Scissors game. Has round tracking; first player to score 5 wins.',
+			'HTML, CSS, and JavaScript practice by making a simple Rock, Paper, Scissors game. First player to win 5 rounds wins.',
 		image: rockPaperScissors,
 		link: 'https://ha-x-3.github.io/rock-paper-scissors/',
 	},
