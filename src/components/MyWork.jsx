@@ -162,7 +162,7 @@ const projects = [
 		description:
 			'HTML and CSS practice making a website in ode to John Williams.',
 		image: tribute,
-		link: 'https://ha-x-3.github.io/technical-documentation-sop/',
+		link: 'https://ha-x-3.github.io/tribute-site/',
 	},
 ];
 
