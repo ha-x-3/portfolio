@@ -419,7 +419,7 @@ li {
   .mySkills {
     width: 100vw;
     min-height: 950px;
-    padding-top: 75px;
+    padding: 75px 0;
   }
 
   .skillsContent {
