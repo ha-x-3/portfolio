@@ -420,6 +420,7 @@ li {
   .mySkills {
     width: 100vw;
     min-height: 190vh;
+    padding-top: 75px;
   }
 
   .skillsContent {
@@ -453,6 +454,7 @@ li {
 
   .workContent {
     width: 85vw;
+    padding-top: 75px;
   }
 
   .workHeading {
@@ -497,6 +499,7 @@ li {
 
   #contact {
     height: 125vh;
+    padding-top: 75px;
   }
 
   .contactContent {
