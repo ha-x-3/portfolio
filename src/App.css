@@ -387,7 +387,7 @@ li {
 }
 
 /* Media queries for responsive design */
-@media (max-width: 992px) {
+@media (max-width: 844px) {
   .home {
     height: 100vh;
     overflow-x: hidden;
@@ -545,7 +545,7 @@ li {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 390px) {
     .mySkills {
       min-height: 170vh;
     }
