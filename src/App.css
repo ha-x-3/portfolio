@@ -108,8 +108,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 75px; /* Adjust this padding to prevent overlap */
-  padding-bottom: 75px; /* Add padding to the bottom */
+  padding-top: 75px 20px; /* Adjust this padding to prevent overlap */
   position: relative;
   overflow: hidden;
 }
@@ -419,7 +418,7 @@ li {
 
   .mySkills {
     width: 100vw;
-    min-height: 190vh;
+    min-height: 230vh;
     padding-top: 75px;
   }
 
@@ -434,12 +433,15 @@ li {
     width: 85%;
     text-align: left;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 2.5rem;
   }
 
   .skillsHeading {
-    margin: 4.6875rem auto 3.125rem auto;
+    padding-top: 75px;
+    margin: 0 auto 3.125rem auto;
   }
 
   .hardSkills, .softSkills {
@@ -544,6 +546,14 @@ li {
 }
 
 @media (max-width: 768px) {
+    .mySkills {
+      min-height: 170vh;
+    }
+
+    .skills {
+      flex-direction: column;
+    }
+
     .contactLinks {
       flex-wrap: nowrap;
       margin-left: 0;
