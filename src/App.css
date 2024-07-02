@@ -562,6 +562,14 @@ li {
 }
 
 @media (max-width: 390px) {
+    .navBar {
+      height: 75px;
+    }
+
+    .navGradient {
+      top: 75px;
+    }
+
     .mySkills {
       min-height: 1440px;
     }
