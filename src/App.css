@@ -167,6 +167,7 @@ li {
 
 .hardSkills, .softSkills {
   width: 50%;
+  font-weight: 300;
 }
 
 /* Work section */
