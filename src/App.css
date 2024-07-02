@@ -404,6 +404,10 @@ li {
     width: 50%;
   }
 
+  .navBar {
+    height: 55px;
+  }
+
   .navLinks {
     max-width: 70%;
     flex: 1;
@@ -414,6 +418,10 @@ li {
 
   #navLogoImage {
     max-width: 30%;
+  }
+
+  .navGradient {
+    top: 55px;
   }
 
   .mySkills {
@@ -517,7 +525,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 22px;
   }
 
   .contactHeading {
