@@ -37,6 +37,11 @@ a {
 #phoenixImage {
   width: 100%;
   height: auto;
+  transition: transform 1s ease-in-out;
+}
+
+#phoenixImage:hover {
+  transform: scaleY(1.15);
 }
 
 /* Navbar styling */
