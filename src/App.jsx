@@ -10,6 +10,7 @@ function App() {
 	const [showNav, setShowNav] = useState(false);
 	const [startParallaxSkills, setStartParallaxSkills] = useState(false);
 	const [startParallaxContact, setStartParallaxContact] = useState(false);
+	const [homeInView, setHomeInView] = useState(true);
 	const mySkillsRef = useRef(null);
 	const contactRef = useRef(null);
 
@@ -32,14 +33,26 @@ function App() {
 
 				setStartParallaxContact(contactRect.top < triggerPoint);
 			}
+
+			// Check if Home is in view
+			setHomeInView(window.scrollY < window.innerHeight);
+		};
+
+		const handleMouseMove = (e) => {
+			const hoverThreshold = 50; // 50px from the top of the viewport
+			if (homeInView) {
+				setShowNav(e.clientY < hoverThreshold);
+			}
 		};
 
 		window.addEventListener('scroll', handleScroll);
+		window.addEventListener('mousemove', handleMouseMove);
 
 		return () => {
 			window.removeEventListener('scroll', handleScroll);
+			window.removeEventListener('mousemove', handleMouseMove);
 		};
-	}, []);
+	}, [homeInView]);
 
 	return (
 		<div className='App'>
