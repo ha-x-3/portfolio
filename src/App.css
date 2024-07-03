@@ -40,17 +40,8 @@ a {
   transition: transform 0.25s ease-in-out;
 }
 
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
 #phoenixImage:hover {
-  animation: bounce 0.5s;
+  transform: translateY(-2%);
 }
 
 #phoenixImageReflection {
