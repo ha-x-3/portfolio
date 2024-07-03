@@ -37,11 +37,16 @@ a {
 #phoenixImage {
   width: 100%;
   height: auto;
-  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in;
 }
 
 #phoenixImage:hover {
-  transform: scaleY(1.15);
+  transform: translateY(-5%);
+}
+
+#phoenixImageReflection {
+  width: 100%;
+  height: auto;
 }
 
 /* Navbar styling */
@@ -400,6 +405,11 @@ li {
   }
 
   #phoenixImage {
+    width: 100vw;
+    height: auto;
+  }
+
+  #phoenixImageReflection {
     width: 100vw;
     height: auto;
   }
