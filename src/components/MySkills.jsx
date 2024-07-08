@@ -45,14 +45,13 @@ const MySkills = React.forwardRef(({ startParallax }, ref) => {
 						<div className='hardSkills'>
 							<h1>HARD SKILLS</h1>
 							<ul>
-								<li>HTML</li>
-								<li>CSS</li>
+								<li>HTML/CSS</li>
 								<li>JAVASCRIPT</li>
 								<li>JAVA</li>
 								<li>SQL</li>
 								<li>VSCODE</li>
 								<li>INTELLIJ</li>
-								<li>MY SQL WORKBENCH</li>
+								<li>MYSQL WORKBENCH</li>
 								<li>REACT</li>
 								<li>GIT & GITHUB</li>
 								<li>LIGHT AUTOMATED TESTING</li>
