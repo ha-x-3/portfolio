@@ -77,7 +77,7 @@ a {
 }
 
 .navContent {
-  width: 90%;
+  width: 65%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -424,6 +424,10 @@ li {
     height: 55px;
   }
 
+  .navContent {
+    width: 75%;
+  }
+
   .navLinks {
     max-width: 70%;
     flex: 1;
@@ -579,6 +583,14 @@ li {
 @media (max-width: 390px) {
     .navBar {
       height: 75px;
+    }
+
+    .navContent {
+      width: 98%;
+    }
+
+    .navLinks {
+      padding-right: 5px;
     }
 
     .navGradient {
