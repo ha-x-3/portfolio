@@ -44,9 +44,14 @@ a {
   transform: translateY(-2%);
 }
 
+#phoenixImage:hover + #phoenixImageReflection {
+  transform: translateY(2%);
+}
+
 #phoenixImageReflection {
   width: 100%;
   height: auto;
+  transition: transform 0.25s ease-in-out;
 }
 
 /* Navbar styling */
