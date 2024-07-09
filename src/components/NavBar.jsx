@@ -20,13 +20,13 @@ export default function NavBar({ showNav}) {
 							HOME
 						</a>
 						<a
-							href='#skills'
+							href='#skills-padding'
 							className='navLink'
 						>
 							MY SKILLS
 						</a>
 						<a
-							href='#work'
+							href='#work-padding'
 							className='navLink'
 						>
 							MY WORK

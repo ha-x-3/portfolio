@@ -58,10 +58,18 @@ function App() {
 		<div className='App'>
 			<NavBar showNav={showNav} />
 			<Home />
+			<div
+				id='skills-padding'
+				style={{ paddingTop: '75px', marginTop: '-75px' }}
+			></div>
 			<MySkills
 				ref={mySkillsRef}
 				startParallax={startParallaxSkills}
 			/>
+			<div
+				id='work-padding'
+				style={{ paddingTop: '75px', marginTop: '-75px' }}
+			></div>
 			<MyWork />
 			<Contact
 				ref={contactRef}
