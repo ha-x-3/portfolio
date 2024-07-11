@@ -608,6 +608,7 @@ li {
 
     .skills {
       flex-direction: column;
+      width: 282px;
     }
 
     .contactLinks {
