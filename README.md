@@ -1,6 +1,6 @@
 # Hi there! I'm Brittney!
 
-I'm still learning new skills every day. I have done projects using these tools so far:
+I'm still learning new skills every day. I have done projects using these tools ***so far***:
 
 <p>
     <img src="./src/assets/js.png" width="75" alt="JavaScript - " />
@@ -18,6 +18,7 @@ I'm still learning new skills every day. I have done projects using these tools 
      <img src="./src/assets/reactnative.png" width="75" alt="React Native - " />
      <img src="./src/assets/Xcode.png" width="75" alt="Xcode - " />
      <img src="./src/assets/androidstudio.png" width="75" alt="Android Studio" />
+     <img src="./src/assets/figma.png" width="75" alt="Figma" />
 </p>
 
 
