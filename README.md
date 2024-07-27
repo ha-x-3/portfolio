@@ -10,6 +10,7 @@ I'm still learning new skills every day. I have done projects using these tools 
     <img src="./src/assets/mysql.png" width="75" alt="MySQL - " />
     <img src="./src/assets/react.png" width="75" alt="React - " />
      <img src="./src/assets/springboot.png" width="75" alt="Spring Boot - " />
+     <img src="./src/assets/vscode.png" width="75" alt="VS Code - " />
 </p>
 
 
