@@ -14,6 +14,7 @@ I'm still learning new skills every day. I have done projects using these tools 
      <img src="./src/assets/intellij.png" width="75" alt="IntelliJ IDEA - " />
      <img src="./src/assets/git.png" width="75" alt="Git - " />
      <img src="./src/assets/commandline.png" width="75" alt="Command Line - " />
+     <img src="./src/assets/reactnative.png" width="75" alt="React Native - " />
 </p>
 
 
