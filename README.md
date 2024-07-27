@@ -15,6 +15,8 @@ I'm still learning new skills every day. I have done projects using these tools 
      <img src="./src/assets/git.png" width="75" alt="Git - " />
      <img src="./src/assets/commandline.png" width="75" alt="Command Line - " />
      <img src="./src/assets/reactnative.png" width="75" alt="React Native - " />
+     <img src="./src/assets/Xcode.png" width="75" alt="Xcode - " />
+     <img src="./src/assets/androidstudio.png" width="75" alt="Android Studio" />
 </p>
 
 
