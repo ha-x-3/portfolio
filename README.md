@@ -12,6 +12,8 @@ I'm still learning new skills every day. I have done projects using these tools 
      <img src="./src/assets/springboot.png" width="75" alt="Spring Boot - " />
      <img src="./src/assets/vscode.png" width="75" alt="VS Code - " />
      <img src="./src/assets/intellij.png" width="75" alt="IntelliJ IDEA - " />
+     <img src="./src/assets/git.png" width="75" alt="Git - " />
+     <img src="./src/assets/commandline.png" width="75" alt="Command Line - " />
 </p>
 
 
