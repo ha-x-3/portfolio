@@ -21,4 +21,4 @@ I'm still learning new skills every day. I have done projects using these tools 
 </p>
 
 
-Click on the site link to view more about me.
+Click on the <a href='https://www.brittneyepperson.com' target="_blank">site link</a> to view more about me.
