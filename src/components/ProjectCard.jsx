@@ -47,17 +47,20 @@ const ProjectCard = ({
 			ref={ref}
 			className={`projectCard ${activeProject === id ? 'active' : ''}`}
 		>
-            <a href={link}>
-              <img
-				src={image}
-				alt={title}
-                />
-                <div className='projectInfo'>
-                    <h3>{title}</h3>
-                    <p>{description}</p>
-                </div>  
-            </a>
-			
+			<a
+				href={link}
+				target='_blank'
+				rel='noopener noreferrer'
+			>
+				<img
+					src={image}
+					alt={title}
+				/>
+				<div className='projectInfo'>
+					<h3>{title}</h3>
+					<p>{description}</p>
+				</div>
+			</a>
 		</div>
 	);
 };

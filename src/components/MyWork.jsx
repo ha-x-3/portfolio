@@ -193,7 +193,11 @@ const MyWork = () => {
 					))}
 				</div>
 				<div className='repoLink'>
-					<a href='https://github.com/ha-x-3?tab=repositories'>
+					<a
+						href='https://github.com/ha-x-3?tab=repositories'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
 						<div className='buttonBorder'>
 							<div className='button'>SEE FULL LIBRARY</div>
 						</div>
