@@ -12,7 +12,7 @@ import launchChecklist from '../assets/launchChecklist.png';
 import etchASketch from '../assets/etchASketch.png';
 import fccDrumMachine from '../assets/fccDrumMachine.png';
 import rockPaperScissors from '../assets/rockPaperScissors.png';
-import odinProductLanding from '../assets/odinProductLanding.png';
+import reactMemoryGame from '../assets/reactMemoryGame.png';
 import familyBbqSurvey from '../assets/familyBbqSurvey.png';
 import relax from '../assets/relax.png';
 import technicalSOP from '../assets/technicalSOP.png';
@@ -94,11 +94,11 @@ const projects = [
 	},
 	{
 		id: 10,
-		title: 'Etch-A-Sketch',
+		title: 'React Cat Memory Game',
 		description:
-			"The Odin Project's HTML, CSS, and JavaScript exercise making an Etch-A-Sketch. Equipped with color-picker or random color draw settings.",
-		image: etchASketch,
-		link: 'https://ha-x-3.github.io/etch-a-sketch/',
+			"Based on The Odin Project's React Memory Card activity. Uses React, Axios for fetching images, and React Hooks for managing state.",
+		image: reactMemoryGame,
+		link: 'https://ha-x-3.github.io/odin-react-memory-card/',
 	},
 	{
 		id: 11,
@@ -118,11 +118,11 @@ const projects = [
 	},
 	{
 		id: 13,
-		title: 'Product Landing Site',
+		title: 'Etch-A-Sketch',
 		description:
-			"HTML and CSS practice by making The Odin Project's product landing activity.",
-		image: odinProductLanding,
-		link: 'https://ha-x-3.github.io/odin-product-landing-page/',
+			"The Odin Project's HTML, CSS, and JavaScript exercise making an Etch-A-Sketch. Equipped with color-picker or random color draw settings.",
+		image: etchASketch,
+		link: 'https://ha-x-3.github.io/etch-a-sketch/',
 	},
 	{
 		id: 14,
